@@ -1,0 +1,222 @@
+.movingBoxesMain{
+	width:640px;
+	height:512px;
+	margin: auto;
+	position: relative;
+	background: #FFF;
+	overflow:hidden;
+	border: 1px solid #000;
+}
+
+/*.movingBoxesMain{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+}*/
+
+.movingBoxesMain .camera{
+	position: relative;
+	width:100%;
+	height:100%;
+	overflow: visible;
+}
+
+.actor{
+	position:absolute;
+	/*background: rgba(255,255,255,0.5);*/
+	width:64px;
+	height:64px;
+}
+
+.actor.colliding{
+	background: rgba(255,0,0,0.25);
+}
+
+/**
+ * Knuckles Sprite
+**/
+
+.actor.knuckles{
+	z-index: 1000;
+}
+
+.actor.knuckles .sprite{
+	width:64px;
+	height:64px;
+	position:absolute;
+	background: url(/Static/MovingBoxes/Sonic/knux.png);
+}
+
+.actor.knuckles .sprite.standing{
+	
+}
+
+.actor.knuckles .sprite.walking{
+	-webkit-animation: knucklesWalking steps(8) 0.75s infinite;
+}
+
+@-webkit-keyframes knucklesWalking{
+	from{
+		background-position:-64px 0px;
+	}
+	to{
+		background-position:-576px 0px;
+	}
+}
+
+.actor.knuckles .sprite.running{
+	-webkit-animation: knucklesRunning steps(4) 0.25s infinite;
+}
+
+@-webkit-keyframes knucklesRunning{
+	from{
+		background-position:0px -64px;
+	}
+	to{
+		background-position:-256px -64px;
+	}
+}
+
+.actor.knuckles .sprite.jumping{
+	-webkit-animation: knucklesJumping steps(5) 0.2s infinite;
+}
+
+@-webkit-keyframes knucklesJumping{
+	from{
+		background-position:0px -128px;
+	}
+	to{
+		background-position:-320px -128px;
+	}
+}
+
+/**
+ * CrabMeat Sprite
+**/
+.actor.crabMeat .sprite{
+	width:64px;
+	height:64px;
+	position:absolute;
+	background: url(/Static/MovingBoxes/Sonic/crabMeat.png);
+	background-position:-128px 0px;
+}
+
+.actor.crabMeat .sprite.walking{
+	-webkit-animation: crabMeatWalking steps(4) 0.5s infinite;
+}
+
+@-webkit-keyframes crabMeatWalking{
+	from{
+		background-position:-64px 0px;
+	}
+	to{
+		background-position:-320px 0px;
+	}
+}
+
+.actor.crabMeat .sprite.jumping{
+	background-position:-192px 0px;
+}
+
+.actor.ring .sprite{
+	width:64px;
+	height:64px;
+	/*border:1px black solid;*/
+	position:absolute;
+	background: url(/Static/MovingBoxes/Sonic/rings.png);
+	-webkit-animation: ringSpin steps(7) 0.5s infinite;
+}
+
+.actor.explosion .sprite{
+	width:64px;
+	height:64px;
+	position:absolute;
+	background: url(/Static/MovingBoxes/Sonic/explosion.png);
+	-webkit-animation: explosion steps(5) 0.5s infinite;
+}
+
+.actor.brokenMonitor .sprite{
+	width:64px;
+	height:64px;
+	position:absolute;
+	background: url(/Static/MovingBoxes/Sonic/brokenMonitor.png);
+}
+
+.actor.ringMonitor .sprite{
+	width:64px;
+	height:64px;
+	/*border:1px black solid;*/
+	position:absolute;
+	background: url(/Static/MovingBoxes/Sonic/ringMonitor.png);
+	-webkit-animation: monitor steps(3) 0.1s infinite;
+}
+
+.flipX{
+	transform: scale(-1, 1);
+}
+.flipY{
+	transform: scale(1, -1);
+}
+
+.flipX.flipY{
+	transform: scale(-1, -1);
+}
+
+@-webkit-keyframes ringSpin{
+	from{
+		background-position:0px 0px;
+	}
+	to{
+		background-position:-448px 0px;
+	}
+}
+
+@-webkit-keyframes explosion{
+	from{
+		background-position:0px 0px;
+	}
+	to{
+		background-position:-320px 0px;
+	}
+}
+
+@-webkit-keyframes explosion{
+	from{
+		background-position:0px 0px;
+	}
+	to{
+		background-position:-320px 0px;
+	}
+}
+
+@-webkit-keyframes monitor{
+	from{
+		background-position:0px 0px;
+	}
+	to{
+		background-position:-192px 0px;
+	}
+}
+
+.block{
+	position:absolute;
+	width:128px;
+	height:128px;
+	background: url(/Static/MovingBoxes/Sonic/testTiles2.png);
+	/*border:1px solid rgba(0,255,255,1);*/
+	/*background: url(/Static/MovingBoxes/Sonic/EmeraldHillZone.png);*/
+	
+}
+
+.hud{
+	position:absolute;
+	top:8px;
+	left:10px;
+	color:#eee;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 14pt;
+	text-shadow: #000 2px 2px;
+}
