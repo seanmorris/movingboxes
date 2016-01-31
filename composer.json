@@ -1,15 +1,15 @@
 {
-	"name": "seanmorris/movingboxes"
-	, "authors": [
-		{
-			"name": "Sean Morris",
-			"email": "sean@sean-morris.com"
-		}
-	]
-	, "autoload": {
-		"psr-4": {
-			"SeanMorris\\MovingBoxes\\Test\\": "test/",
-			"SeanMorris\\MovingBoxes\\": "source/"
-		}
-	}
+  "name": "seanmorris/movingboxes",
+  "authors": [
+    {
+      "name": "Sean Morris",
+      "email": "sean@sean-morris.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SeanMorris\\MovingBoxes\\Test\\": "test/",
+      "SeanMorris\\MovingBoxes\\": "source/"
+    }
+  }
 }

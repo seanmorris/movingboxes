@@ -46,7 +46,7 @@
 	width:64px;
 	height:64px;
 	position:absolute;
-	background: url(/Static/MovingBoxes/Sonic/knux.png);
+	background: url(/SeanMorris/MovingBoxes/Sonic/knux.png);
 }
 
 .actor.knuckles .sprite.standing{
@@ -99,7 +99,7 @@
 	width:64px;
 	height:64px;
 	position:absolute;
-	background: url(/Static/MovingBoxes/Sonic/crabMeat.png);
+	background: url(/SeanMorris/MovingBoxes/Sonic/crabMeat.png);
 	background-position:-128px 0px;
 }
 
@@ -125,7 +125,7 @@
 	height:64px;
 	/*border:1px black solid;*/
 	position:absolute;
-	background: url(/Static/MovingBoxes/Sonic/rings.png);
+	background: url(/SeanMorris/MovingBoxes/Sonic/rings.png);
 	-webkit-animation: ringSpin steps(7) 0.5s infinite;
 }
 
@@ -133,7 +133,7 @@
 	width:64px;
 	height:64px;
 	position:absolute;
-	background: url(/Static/MovingBoxes/Sonic/explosion.png);
+	background: url(/SeanMorris/MovingBoxes/Sonic/explosion.png);
 	-webkit-animation: explosion steps(5) 0.5s infinite;
 }
 
@@ -141,7 +141,7 @@
 	width:64px;
 	height:64px;
 	position:absolute;
-	background: url(/Static/MovingBoxes/Sonic/brokenMonitor.png);
+	background: url(/SeanMorris/MovingBoxes/Sonic/brokenMonitor.png);
 }
 
 .actor.ringMonitor .sprite{
@@ -149,7 +149,7 @@
 	height:64px;
 	/*border:1px black solid;*/
 	position:absolute;
-	background: url(/Static/MovingBoxes/Sonic/ringMonitor.png);
+	background: url(/SeanMorris/MovingBoxes/Sonic/ringMonitor.png);
 	-webkit-animation: monitor steps(3) 0.1s infinite;
 }
 
@@ -204,9 +204,9 @@
 	position:absolute;
 	width:128px;
 	height:128px;
-	background: url(/Static/MovingBoxes/Sonic/testTiles2.png);
+	background: url(/SeanMorris/MovingBoxes/Sonic/testTiles2.png);
 	/*border:1px solid rgba(0,255,255,1);*/
-	/*background: url(/Static/MovingBoxes/Sonic/EmeraldHillZone.png);*/
+	/*background: url(/SeanMorris/MovingBoxes/Sonic/EmeraldHillZone.png);*/
 	
 }
 

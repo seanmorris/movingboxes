@@ -1,13 +1,14 @@
 <?php
 namespace SeanMorris\MovingBoxes\Route;
-class RootRoute implements \SeanMorris\Ids\Routable
+class RootRoute extends \SeanMorris\PressKit\Controller
 {
 	public
-		$title = 'Moving Boxes'
+		$title = 'Moving Boxes',
+		$theme = 'SeanMorris\MovingBoxes\Theme\Theme'
+	;
 		
 	public function index($router)
 	{
-		echo new \SeanMorris\MovingBoxes\View\Main;
-		die();
+		return new \SeanMorris\MovingBoxes\View\Main;
 	}
 }
